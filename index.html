@@ -1,89 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel: Sustainability Through the Ages</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="style.css" />
+  
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Header / Hero Section -->
-  <header>
-    <div>
-      <!-- Ask Copilot to teach you about `.svg`. 🙂 You'll need to resize the logo with CSS. -->
-      <img src="img/intel-header-logo.svg" alt="Intel Logo" />
-      <!-- Main Heading -->
-      <h1>
-        Sustainability Through the Ages
-      </h1>
-
-      <!-- Subheading / Description -->
-      <p class="footer">
-        Explore Intel's journey through time, discovering how our commitment
-        to innovation has shaped a more sustainable future for technology 
-        and our planet.
-      </p>
+  <header class="text-center py-5 bg-info-subtle">
+    <div class="container">
+      <img src="img/intel-header-logo.svg" alt="Intel Logo" class="img-fluid" style="max-width: 150px;" />
+      <h1 class="display-4 fw-bold mt-3">Sustainability Through the Ages</h1>
+      <p class="lead text-muted">Explore Intel's journey through time, discovering how our commitment to innovation has shaped a more sustainable future for technology and our planet.</p>
     </div>
   </header>
 
-  <!-- Timeline Cards Section -->
-  <section class="card-section">
-
-    <!-- Card 1: 1968 -->
-    <div class="card">
-      <h2>1968</h2>
-      <h3>Intel Founded</h3>
-      <!-- Add image -->
-       <img src="img/1.jpg" alt="card image" />
-      <p>
-        Robert Noyce and Gordon Moore rename the newly formed company 
-        NM Electronics to Intel Corporation, laying the foundation for 
-        decades of technological innovation.
-      </p>
-    </div>
-
-    <!-- Card 2: 1971 -->
-    <div class="card">
-      <h2>1971</h2>
-      <h3>First Microprocessor</h3>
-      <!-- Add image -->
-       <img src="img/2.jpg" alt="card image" />
-      <p>
-        Intel debuts the 4004, the world's first commercial microprocessor, 
-        igniting the microprocessor revolution and propelling the future 
-        of computing devices.
-      </p>
-    </div>
-
-    <!-- Card 3: 1978 -->
-    <div class="card">
-      <h2>1978</h2>
-      <h3>8086 Processor</h3>
-      <!-- Add image -->
-       <img src="img/3.jpg" alt="card image" />
-      <p>
-        Launch of the 8086 processor, establishing the x86 architecture 
-        that drives countless PCs and servers in the modern era.
-      </p>
-    </div>
-
-    <!-- Card 4: 1985 -->
-    <div class="card">
-      <h2>1985</h2>
-      <h3>386 Processor</h3>
-      <!-- Add image -->
-       <img src="img/4.jpg" alt="card image" />
-      <p>
-        Intel introduces the 386 processor with 32-bit architecture, 
-        ushering in a new era of performance and multitasking for 
-        personal computers.
-      </p>
-    </div>
-
+  <div class="container text-end mt-3">
+    <button id="rtl-toggle" class="btn btn-primary">Switch to RTL</button>
+  </div>
   
+  <section class="container my-5">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center">
+      
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">1968</h2>
+            <h3 class="card-subtitle mb-2 text-muted">Intel Founded</h3>
+            <img src="./img/1.jpg" class="img-fluid mb-3" alt="A vintage image of the Intel co-founders." />
+            <p class="card-text d-none d-lg-block">
+              Robert Noyce and Gordon Moore rename the newly formed company 
+              NM Electronics to Intel Corporation, laying the foundation for 
+              decades of technological innovation.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">1971</h2>
+            <h3 class="card-subtitle mb-2 text-muted">First Microprocessor</h3>
+            <img src="./img/2.jpg" class="img-fluid mb-3" alt="A vintage image of the 4004 microprocessor chip." />
+            <p class="card-text d-none d-lg-block">
+              Intel debuts the 4004, the world's first commercial microprocessor, 
+              igniting the microprocessor revolution and propelling the future 
+              of computing devices.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">1978</h2>
+            <h3 class="card-subtitle mb-2 text-muted">8086 Processor</h3>
+            <img src="./img/3.jpg" class="img-fluid mb-3" alt="A vintage image of the 8086 processor chip." />
+            <p class="card-text d-none d-lg-block">
+              Launch of the 8086 processor, establishing the x86 architecture 
+              that drives countless PCs and servers in the modern era.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">1985</h2>
+            <h3 class="card-subtitle mb-2 text-muted">386 Processor</h3>
+            <img src="./img/4.jpg" class="img-fluid mb-3" alt="A vintage image of the 386 processor chip." />
+            <p class="card-text d-none d-lg-block">
+              Intel introduces the 386 processor with 32-bit architecture, 
+              ushering in a new era of performance and multitasking for 
+              personal computers.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <p class="footer">Scroll to view timeline | Hover over cards to learn more!</p>
+
+  <section class="container my-5">
+    <div class="row text-center g-4">
+      <div class="col-md-4">
+        <span class="material-symbols-outlined display-3 text-primary mb-3">factory</span>
+        <h3 class="h4">Sustainable Manufacturing</h3>
+        <p>We're optimizing our manufacturing processes to reduce our environmental impact, from water conservation to waste reduction.</p>
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Learn More</button>
+      </div>
+      <div class="col-md-4">
+        <span class="material-symbols-outlined display-3 text-primary mb-3">recycling</span>
+        <h3 class="h4">Circular Economy</h3>
+        <p>Intel is committed to a circular economy, designing products for longevity and reuse, and exploring innovative recycling solutions.</p>
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Learn More</button>
+      </div>
+      <div class="col-md-4">
+        <span class="material-symbols-outlined display-3 text-primary mb-3">lightbulb</span>
+        <h3 class="h4">Energy Efficiency</h3>
+        <p>Our innovations in microprocessor technology are focused on creating more powerful and energy-efficient products, reducing power consumption globally.</p>
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="container my-5 py-5 bg-light rounded-3">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="mb-3">Join Our Sustainability Newsletter</h2>
+        <p class="mb-4 text-muted">Stay up to date with Intel's latest initiatives and innovations in sustainability.</p>
+        <form class="d-flex flex-column flex-sm-row justify-content-center" aria-labelledby="newsletter-heading">
+          <label for="emailInput" class="visually-hidden">Email address</label>
+          <input type="email" class="form-control me-sm-2 mb-2 mb-sm-0" id="emailInput" placeholder="Enter your email" aria-label="Enter your email address" required />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sustainability Initiative</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          More details about our sustainability efforts will go here.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center py-4 bg-dark text-white">
+    <div class="container">
+      <p class="m-0">&copy; 2025 Intel Corporation. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const rtlToggle = document.getElementById('rtl-toggle');
+      const html = document.documentElement;
+
+      rtlToggle.addEventListener('click', () => {
+        if (html.getAttribute('dir') === 'ltr') {
+          html.setAttribute('dir', 'rtl');
+          rtlToggle.textContent = 'Switch to LTR';
+        } else {
+          html.setAttribute('dir', 'ltr');
+          rtlToggle.textContent = 'Switch to RTL';
+        }
+      });
+    });
+  </script>
 </body>
 </html>

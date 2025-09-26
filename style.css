@@ -1,62 +1,81 @@
 /* Add your CSS here */
-* {
+
+{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-}
-header {
-  text-align: center;
-  padding: 20px;
-  background-color: lightblue;
-}
-img {
-  max-width: 200px;
-  max-height:200px;
-  height: auto;
-}
-.card-section {
+  }
+  
+  body {
+  background-color: #f8f9fa;
+  color: #292129;
+  }
+  header {
+  background-color: rgb(18,124,193);
+  height: 400px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
-  padding: 20px;
-  background-color: lightcyan;
-  height: 100%;
-}
-.card {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  padding: 20px;
+  align-items: center;
+  }
+  
+  .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .card img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  }
+  
+  .card-text {
+  margin-top: 15px;
+  }
+  
+  .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+  }
+  
+  /* Custom styling for the first 4 cards */
+  
+  /* 1. Initial card background and transition setup */
+  .row > .col:nth-child(-n + 4) .card {
+  background-color: rgba(18, 124, 193, 0.1);
+  transition:
+  opacity 0.3s ease-in-out,
+  background-color 0.3s ease-in-out;
+  }
+  
+  /* 2. Initial state: make non-paragraph content slightly transparent (0.3) */
+  .row > .col:nth-child(-n + 4) .card-body > * {
+  opacity: 0.3;
+  transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* 3. Initial state: make the paragraph fully invisible (0) */
+  .row > .col:nth-child(-n + 4) .card-text {
+  opacity: 0;
+  }
+  
+  /* 4. Hover state: make the background more transparent */
+  .row > .col:nth-child(-n + 4) .card:hover {
+  background-color: rgba(18, 124, 193, 0.05);
+  }
+  
+  /* 5. Hover state: make all content fully visible */
+  .row > .col:nth-child(-n + 4) .card:hover .card-body > * {
+  opacity: 1;
+  }
+  
+  /* 6. Hover state: ensure text is centered */
+  .row > .col:nth-child(-n + 4) .card:hover .card-text {
   text-align: center;
-}
-.card h2 {
-  color: #333;
-}
-
-.footer {
-  text-align: center;
-  font-size: 14px;
-  color: #666;
-  margin: 20px 0;
-}
-
-.card::hover {
-  background-color: #e0f7fa;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transform: translateY(-5px);
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.card p {
-  display: none;
-}
-
-/* Show the paragraph when hovering over the card */
-.card:hover p {
-  display: block;
-}
+  }
